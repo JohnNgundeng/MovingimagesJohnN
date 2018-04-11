@@ -9,7 +9,7 @@
 display.setStatusBar(display.HiddenStatusBar)
 
 -- global variables 
-scrollSpeed = 3 
+scrollSpeed = 4 
 
 scrollSpeed2 = 7
 
@@ -69,4 +69,9 @@ end
 Runtime:addEventListener("enterFrame", Movebeetle)
 
 
+-- setting sound variables 
+local Sound1 = audio.loadSound("Sounds/UFO .mp3")
+local shipSound
 
+-- setting background music 
+shipSound = audio.play(Sound1)
